@@ -169,14 +169,20 @@ a.btn.btn-primary.btn-sm.st-d {
 /********************* Shopping Demo-8 **********************/
 .product-grid8 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
 }
 .product-grid8 .product-image8 {
   border: 1px solid #e4e9ef;
   position: relative;
   transition: all 0.3s ease 0s;
+  filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    transition-duration: 0.3s;
 }
 .product-grid8:hover .product-image8 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1) rotate(4deg);
+  // background-color: red;
+ 
 }
 .product-grid8 .product-image8 a {
   display: block;
