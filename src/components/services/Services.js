@@ -17,20 +17,6 @@ export default function Services() {
       <section className="pt-0 pb-0 " style={{ backgroundColor: "#191a1f" }}>
         <div
           className=""
-          // style={{
-          //   float: "left",
-          //   width: "100%",
-          //   backgroundColor: "#272727",
-          //   position: "relative",
-          //   backgroundAttachment: "fixed",
-          //   backgroundSize: "cover",
-          //   color: "#ffffff",
-          //   padding: " 50px 0px 50px 0px",
-          //   backgroundImage: `url(${astrologinbg})`,
-          //   backgroundPosition: "center center",
-          //   backgroundRepeat: " no-repeat",
-          //   textAlign: "center",
-          // }}
         >
           <Container className="py-5">
             <div className="d-flex  justify-content-between">
