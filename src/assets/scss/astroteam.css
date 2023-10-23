@@ -69,9 +69,9 @@ section .section-title {
   color: #fff !important;
   margin-top: 18px;
 }
-a:hover {
+/* a:hover {
   color: #ffcc01 !important;
-}
+} */
 .frontside .card .card-title,
 .backside .card .card-title {
   color: #ffcc01 !important;
@@ -230,9 +230,9 @@ a.btn.btn-primary.btn-sm.st-d {
 .product-grid8 .title a {
   color: #000;
 }
-.product-grid8 .title a:hover {
+/* .product-grid8 .title a:hover {
   color: #ffcc01;
-}
+} */
 .product-grid8 .all-deals {
   display: block;
   color: #fff;
