@@ -11,7 +11,7 @@ const FeatureIconSix = ({ spaceTopClass, spaceBottomClass }) => {
         spaceBottomClass ? spaceBottomClass : ""
       }`}
     >
-      <div className="container">
+      {/* <div className="container">
         <div className="heading">
           <h2>Why Choose Astrogyata ?</h2>
           <img src={textbottom} alt="" className="sb-img" />
@@ -31,7 +31,7 @@ const FeatureIconSix = ({ spaceTopClass, spaceBottomClass }) => {
               })}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

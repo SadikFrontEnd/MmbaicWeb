@@ -15,7 +15,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
   }
-  text-color{
+  .text-color{
     color: #ffffff;
   }
   h1 h2,h3,.text-color {
@@ -23,16 +23,23 @@
     font-family: "Playfair Display", Sans-serif;
   }
   a.elementor-button {
-    
     color: #FFFFFF;
-    background-color: #1BE392;
+    /* background-color: #1BE392; */
     box-shadow: 100px 0px 68px -1px #0A8769 inset;
     border-style: solid;
     border-width: 0px 0px 0px 0px;
     border-color: #1A7759;
   }
   .elementor-button.elementor-size-md {
+     font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 4px;
+  }
+  .elementor-button.elementor-size-md:hover {
+    background-color: linear-gradient(to right,#8cc9bb, #67f1ba ) !important;
+    background: linear-gradient(to right,#12cca0, #6adeb0 ) !important; 
     font-size: 16px;
+    transition: 0.3s;
     padding: 15px 30px;
     border-radius: 4px;
   }
@@ -62,4 +69,13 @@
   /* .educationImg{
     filter: url(#colorize);
   } */
-  
+  .font-color{
+    color: black;
+  }
+  .enrollmenow {
+    display: flex;
+    justify-content: center;
+}
+.allservicesmainheading.col-sm-12.col-md-4.col-lg-4 {
+    padding: 8px 35px;
+}

@@ -3,6 +3,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import textbottom from "../../assets/img/textbottom.png";
 import Abotimg from "../../assets/img/abot.png";
+import About from "../astrology/kundalimatch/AboutUs";
+import Services from "../services/ServicesHome";
+
 class AboutUs extends React.Component {
   render() {
     return (
@@ -10,11 +13,18 @@ class AboutUs extends React.Component {
         <div className="category-home">
           <section>
             <Container>
-              <div className="heading">
+              <div className="p-3 d-flex justify-content-center">
                 <h2>About Us</h2>
-                <img src={textbottom} alt="" className="sb-img" />
+                {/* <img src={textbottom} alt="" className="sb-img" /> */}
               </div>
               <Row>
+                <About />
+              </Row>
+              <Row>
+                <Services />
+              </Row>
+
+              {/* <Row>
                 <Col lg="6">
                   <div>
                     <img
@@ -43,7 +53,7 @@ class AboutUs extends React.Component {
 
                   </div>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
           </section>
         </div>
