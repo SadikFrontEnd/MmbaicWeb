@@ -1,0 +1,65 @@
+/* sadik webnew   css*/
+.home-banner{
+    background-color: #131418;
+  }
+  .bannerRow{
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .welcome{
+    color: #1BE392;
+      font-family: "Poppins", Sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  text-color{
+    color: #ffffff;
+  }
+  h1 h2,h3,.text-color {
+    color: #ffffff;
+    font-family: "Playfair Display", Sans-serif;
+  }
+  a.elementor-button {
+    
+    color: #FFFFFF;
+    background-color: #1BE392;
+    box-shadow: 100px 0px 68px -1px #0A8769 inset;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #1A7759;
+  }
+  .elementor-button.elementor-size-md {
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 4px;
+  }
+  h1{
+   font-size: 35px;
+    font-weight: 400;
+  }
+  h2{
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700; 
+  }
+  h3{
+    font-size: 72px;
+    font-weight: 700; 
+  }
+  .elementor-kit-3 h1 {
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+  }
+  .elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  /* .educationImg{
+    filter: url(#colorize);
+  } */
+  
