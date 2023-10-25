@@ -2,14 +2,14 @@ import React from "react";
 import HeroSliderTwentyNine from "../../wrappers/hero-slider/HeroSliderTwentyNine";
 import LayoutOne from "../../layouts/LayoutOne";
 import OurWorkFlow from "../../components/astrology/ourworkflow";
-import BlogFeatured from "../../wrappers/blog-featured/BlogFeatured";
-import TestimonialOne from "../../wrappers/testimonial/TestimonialOne";
-import FunFactOne from "../../wrappers/fun-fact/FunFactOne";
+// import BlogFeatured from "../../wrappers/blog-featured/BlogFeatured";
+// import TestimonialOne from "../../wrappers/testimonial/TestimonialOne";
+// import FunFactOne from "../../wrappers/fun-fact/FunFactOne";
 import AboutUs from "../../components/astrology/aboutus";
 import FeatureIconSix from "../../wrappers/feature-icon/FeatureIconSix";
 import SectionPooja from "../../components/astrology/sectionpooja";
-import SliderList from "../../components/astrology/sliderlist";
-import HomeVideoList from "../../components/astrology/HomeVideoList";
+// import SliderList from "../../components/astrology/sliderlist";
+// import HomeVideoList from "../../components/astrology/HomeVideoList";
 import OurService from "../../components/astrology/OurService";
 
 const HomeFurnitureTwo = () => {
