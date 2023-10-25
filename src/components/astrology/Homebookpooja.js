@@ -3,12 +3,14 @@ import { Container, Row, Col, Button, Input } from "reactstrap";
 import LayoutOne from "../../layouts/LayoutOne";
 import textbottom from "../../assets/img/astro-4.jpg";
 import "../../../src/assets/scss/style.scss";
+import "../../assets/scss/astroteam.css"
 import { BiTime } from "react-icons/bi";
 import { MdOutlineLocationOn } from "react-icons/md";
 import axiosConfig from "../../axiosConfig";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
 
+import VideoSection from "./VideoSection";
 class BookEvent extends React.Component {
   constructor({ props }) {
     super(props);
@@ -36,6 +38,7 @@ class BookEvent extends React.Component {
 
   render() {
     return (
+     <>
       <section className="pt-0 pb-0">
         <div className="container mt-2">
           <Row>
@@ -50,7 +53,7 @@ class BookEvent extends React.Component {
                                   <img
                                     className="imagepooja"
                                     style={{
-                                      borderRadius: "10px",
+                                      
                                       width: "100%",
                                     }}
                                     src={textbottom}
@@ -58,103 +61,28 @@ class BookEvent extends React.Component {
                                   />
                                 </div>
                                 <div className="product-content">
-                                  {/* <Row className="priceandname">
-                                    <Col lg="8" md="8" sm="8">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "300",
-                                        }}
-                                      >
-                                        <b>156
-                                         
-                                        </b>
-                                      </div>
-                                    </Col>
-                                    <Col lg="4" md="4" sm="4">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <i
-                                          class="fa fa-inr"
-                                          aria-hidden="true"
-                                        ></i>
-                                       500/-
-                                      </div>
-                                    </Col>
-                                  </Row> */}
+                                  
                                   <div style={{color:"black"}}>Secret of Successful Teamwork</div>
                                   <div className="" style={{color:"green"}}>Management</div>
-                                  {/* <Row className="priceandname">
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "200",
-                                          color: "black"
-                                        }}
-                                      >
-                                        Mode of Pooja
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "10px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <span style={{ color: "green" }}>offline</span>
-                                      </div>
-                                    </Col>
-                                  </Row> */}
-                                  {/* <Row className="mt-1">
-                                    
-                                        <Col lg="6" md="6" sm="6">
-                                          <div style={{ fontSize: "15px" }}>
-                                             <MdOutlineLocationOn
-                                                  color="black"
-                                                  size={20}
-                                                /> Indore
-                                          </div>
-                                        </Col>
-                                    
+ <Row>
+                                  <Col><ul>
+                                    <li>
+                                      <span  className="px-2"  style={{color:"black"}} ><i class="fa-solid fa-book"></i></span>
+                                      <span className="px-2"   style={{color:"black"}}>12 Lessons</span>
+                                      </li>
+                                    <li>
+                                      <span className="px-2"   style={{color:"black"}} ><i class="fa fa-play"></i></span>
+                                      <span className="px-2"  style={{color:"black"}}>612 week</span>
+                                      </li>
+                                      </ul></Col>
 
-                                    <Col lg="6" md="6" sm="6">
-                                      <span style={{ fontSize: "12px" }}>
-                                       
-                                            <div
-                                              style={{ fontSize: "12px",color:"black" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "green" }}>
-                                              Available
-                                            </div>
-                                      </span>
-                                    </Col>
-                                  </Row> */}
-                                  {/* <Row>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "17px",
-                                          fontWeight: "500",
-                                        }}
-                                      >
-                                        <BiTime color="green" size={16} />{" "}
-                                        Duration
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >458
-                                        
-                                      </div>
-                                    </Col>
-                                  </Row> */}
+                                      <Col>
+                                      <Row>
+                                        <Col lg="8" md="8"><span style={{color:"black"}}>271 Review</span></Col>
+                                        <Col lg="4"  md="4"><span style={{color:"black"}}>*****</span></Col>
+                                      </Row>
+                                      </Col>
+                                 </Row>
 
                                   <Row className="mt-1">
                                     <Link to={`/bookEvent`}>
@@ -165,7 +93,7 @@ class BookEvent extends React.Component {
                                         // }
                                         color="success"
                                       >
-                                        View
+                                        Join CLass
                                       </Button>
                                     </Link>
                                   </Row>
@@ -178,135 +106,36 @@ class BookEvent extends React.Component {
                                   <img
                                     className="imagepooja"
                                     style={{
-                                      borderRadius: "10px",
+                                      
                                       width: "100%",
                                     }}
                                     src={textbottom}
-                                    alt="pooja image"
+                                    alt="image"
                                   />
                                 </div>
                                 <div className="product-content">
-                                  <Row className="priceandname">
-                                    <Col lg="8" md="8" sm="8">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "300",
-                                        }}
-                                      >
-                                        <b>156
-                                          {/* {value?.pooja_type?.pooja_name?.slice(
-                                            0,
-                                            13
-                                          )} */}
-                                        </b>
-                                      </div>
-                                    </Col>
-                                    <Col lg="4" md="4" sm="4">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <i
-                                          class="fa fa-inr"
-                                          aria-hidden="true"
-                                        ></i>
-                                       500/-
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="priceandname">
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "200",
-                                        }}
-                                      >
-                                        Mode of Pooja
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "10px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <span style={{ color: "green" }}>offline</span>
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="mt-1">
-                                    
-                                        <Col lg="6" md="6" sm="6">
-                                          <div style={{ fontSize: "15px" }}>
-                                            {/* {value?.mode !== "online" ? (
-                                              <>
-                                                <MdOutlineLocationOn
-                                                  color="red"
-                                                  size={20}
-                                                />
-                                                {value?.fullfill_location}
-                                              </>
-                                            ) : null} */}
-                                             <MdOutlineLocationOn
-                                                  color="red"
-                                                  size={20}
-                                                /> Indore
-                                          </div>
-                                        </Col>
-                                    
+                                  
+                                  <div style={{color:"black"}}>Secret of Successful Teamwork</div>
+                                  <div className="" style={{color:"green"}}>Management</div>
+ <Row>
+                                  <Col><ul>
+                                    <li>
+                                      <span  className="px-2"  style={{color:"black"}} ><i class="fa fa-book"></i></span>
+                                      <span className="px-2"   style={{color:"black"}}>12k Lessons</span>
+                                      </li>
+                                    <li>
+                                      <span className="px-2"   style={{color:"black"}} ><i class="fa fa-clock"></i></span>
+                                      <span className="px-2"  style={{color:"black"}}>6 week</span>
+                                      </li>
+                                      </ul></Col>
 
-                                    <Col lg="6" md="6" sm="6">
-                                      <span style={{ fontSize: "12px" }}>
-                                        {/* {value?.liveStreaming === true ? ( */}
-                                          {/* <> */}
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "green" }}>
-                                              Available
-                                            </div>
-                                          {/* </>
-                                        ) : (
-                                          <>
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "red" }}>
-                                              Not Available
-                                            </div>
-                                          </>
-                                        )} */}
-                                      </span>
-                                    </Col>
-                                  </Row>
-                                  <Row>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "17px",
-                                          fontWeight: "500",
-                                        }}
-                                      >
-                                        <BiTime color="green" size={16} />{" "}
-                                        Duration
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >458
-                                        {/* {value?.duration} */}
-                                      </div>
-                                    </Col>
-                                  </Row>
+                                      <Col>
+                                      <Row>
+                                        <Col lg="8" md="8"><span style={{color:"black"}}>271 Review</span></Col>
+                                        <Col lg="4"  md="4"><span style={{color:"black"}}>*****</span></Col>
+                                      </Row>
+                                      </Col>
+                                 </Row>
 
                                   <Row className="mt-1">
                                     <Link to={`/bookEvent`}>
@@ -317,7 +146,7 @@ class BookEvent extends React.Component {
                                         // }
                                         color="success"
                                       >
-                                        View
+                                        Join CLass
                                       </Button>
                                     </Link>
                                   </Row>
@@ -330,135 +159,36 @@ class BookEvent extends React.Component {
                                   <img
                                     className="imagepooja"
                                     style={{
-                                      borderRadius: "10px",
+                                      
                                       width: "100%",
                                     }}
                                     src={textbottom}
-                                    alt="pooja image"
+                                    alt="image"
                                   />
                                 </div>
                                 <div className="product-content">
-                                  <Row className="priceandname">
-                                    <Col lg="8" md="8" sm="8">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "300",
-                                        }}
-                                      >
-                                        <b>156
-                                          {/* {value?.pooja_type?.pooja_name?.slice(
-                                            0,
-                                            13
-                                          )} */}
-                                        </b>
-                                      </div>
-                                    </Col>
-                                    <Col lg="4" md="4" sm="4">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <i
-                                          class="fa fa-inr"
-                                          aria-hidden="true"
-                                        ></i>
-                                       500/-
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="priceandname">
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "200",
-                                        }}
-                                      >
-                                        Mode of Pooja
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "10px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <span style={{ color: "green" }}>offline</span>
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="mt-1">
-                                    
-                                        <Col lg="6" md="6" sm="6">
-                                          <div style={{ fontSize: "15px" }}>
-                                            {/* {value?.mode !== "online" ? (
-                                              <>
-                                                <MdOutlineLocationOn
-                                                  color="red"
-                                                  size={20}
-                                                />
-                                                {value?.fullfill_location}
-                                              </>
-                                            ) : null} */}
-                                             <MdOutlineLocationOn
-                                                  color="red"
-                                                  size={20}
-                                                /> Indore
-                                          </div>
-                                        </Col>
-                                    
+                                  
+                                  <div style={{color:"black"}}>Secret of Successful Teamwork</div>
+                                  <div className="" style={{color:"green"}}>Management</div>
+ <Row>
+                                  <Col><ul>
+                                    <li>
+                                      <span  className="px-2"  style={{color:"black"}} >icon</span>
+                                      <span className="px-2"   style={{color:"black"}}>12 Lessons</span>
+                                      </li>
+                                    <li>
+                                      <span className="px-2"   style={{color:"black"}} ><i class="fa fa-clock"></i></span>
+                                      <span className="px-2"  style={{color:"black"}}>68 week</span>
+                                      </li>
+                                      </ul></Col>
 
-                                    <Col lg="6" md="6" sm="6">
-                                      <span style={{ fontSize: "12px" }}>
-                                        {/* {value?.liveStreaming === true ? ( */}
-                                          {/* <> */}
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "green" }}>
-                                              Available
-                                            </div>
-                                          {/* </>
-                                        ) : (
-                                          <>
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "red" }}>
-                                              Not Available
-                                            </div>
-                                          </>
-                                        )} */}
-                                      </span>
-                                    </Col>
-                                  </Row>
-                                  <Row>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "17px",
-                                          fontWeight: "500",
-                                        }}
-                                      >
-                                        <BiTime color="green" size={16} />{" "}
-                                        Duration
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >458
-                                        {/* {value?.duration} */}
-                                      </div>
-                                    </Col>
-                                  </Row>
+                                      <Col>
+                                      <Row>
+                                        <Col lg="8" md="8"><span style={{color:"black"}}>271 Review</span></Col>
+                                        <Col lg="4"  md="4"><span style={{color:"black"}}>*****</span></Col>
+                                      </Row>
+                                      </Col>
+                                 </Row>
 
                                   <Row className="mt-1">
                                     <Link to={`/bookEvent`}>
@@ -469,178 +199,16 @@ class BookEvent extends React.Component {
                                         // }
                                         color="success"
                                       >
-                                        View
+                                        Join CLass
                                       </Button>
                                     </Link>
                                   </Row>
                                 </div>
                               </div>
                             </Col>
-                      {/* {this.state.listofpooja !== "" ? (
-                        <>
-                          {this.state.listofpooja?.map((value, i) => (
-                            <Col key={i} className="mt-3" md="3">
-                              <div className="product-grid8">
-                                <div class="product-image8 imageofpooja">
-                                  <img
-                                    className="imagepooja"
-                                    style={{
-                                      borderRadius: "10px",
-                                      width: "100%",
-                                    }}
-                                    src={value?.poojaimg}
-                                    alt="pooja image"
-                                  />
-                                </div>
-                                <div className="product-content">
-                                  <Row className="priceandname">
-                                    <Col lg="8" md="8" sm="8">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "300",
-                                        }}
-                                      >
-                                        <b>
-                                          {value?.pooja_type?.pooja_name?.slice(
-                                            0,
-                                            13
-                                          )}
-                                        </b>
-                                      </div>
-                                    </Col>
-                                    <Col lg="4" md="4" sm="4">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <i
-                                          class="fa fa-inr"
-                                          aria-hidden="true"
-                                        ></i>{" "}
-                                        {value?.pooja_price}
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="priceandname">
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "12px",
-                                          fontWeight: "200",
-                                        }}
-                                      >
-                                        Mode of Pooja
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "10px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        <span style={{ color: "green" }}>
-                                          {value?.mode ? (
-                                            <>
-                                              <b>{value?.mode}</b>
-                                            </>
-                                          ) : (
-                                            "offline"
-                                          )}
-                                        </span>
-                                      </div>
-                                    </Col>
-                                  </Row>
-                                  <Row className="mt-1">
-                                    {value?.mode === "online" ? null : (
-                                      <>
-                                        <Col lg="6" md="6" sm="6">
-                                          <div style={{ fontSize: "15px" }}>
-                                            {value?.mode !== "online" ? (
-                                              <>
-                                                <MdOutlineLocationOn
-                                                  color="red"
-                                                  size={20}
-                                                />{" "}
-                                                {value?.fullfill_location}
-                                              </>
-                                            ) : null}
-                                          </div>
-                                        </Col>
-                                      </>
-                                    )}
-
-                                    <Col lg="6" md="6" sm="6">
-                                      <span style={{ fontSize: "12px" }}>
-                                        {value?.liveStreaming === true ? (
-                                          <>
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "green" }}>
-                                              Available
-                                            </div>
-                                          </>
-                                        ) : (
-                                          <>
-                                            <div
-                                              style={{ fontSize: "12px" }}
-                                              className=" poojanames  justify-content-end"
-                                            >
-                                              LiveStreaming
-                                            </div>
-                                            <div style={{ color: "red" }}>
-                                              Not Available
-                                            </div>
-                                          </>
-                                        )}
-                                      </span>
-                                    </Col>
-                                  </Row>
-                                  <Row>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{
-                                          fontSize: "17px",
-                                          fontWeight: "500",
-                                        }}
-                                      >
-                                        <BiTime color="green" size={16} />{" "}
-                                        Duration
-                                      </div>
-                                    </Col>
-                                    <Col lg="6" md="6" sm="6">
-                                      <div
-                                        style={{ fontSize: "15px" }}
-                                        className=" poojanames  justify-content-end"
-                                      >
-                                        {value?.duration}
-                                      </div>
-                                    </Col>
-                                  </Row>
-
-                                  <Row className="mt-1">
-                                    <Link to={`/bookEvent`}>
-                                      <Button
-                                        style={{ width: "100%" }}
-                                        onClick={() =>
-                                          this.handlecheckpooja(value)
-                                        }
-                                        color="success"
-                                      >
-                                        View
-                                      </Button>
-                                    </Link>
-                                  </Row>
-                                </div>
-                              </div>
-                            </Col>
-                          ))}
-                        </>
-                      ) : null} */}
-                    </Row>
+                    
+                   
+                      </Row>
                   </div>
                 </section>
               </div>
@@ -648,6 +216,8 @@ class BookEvent extends React.Component {
           </Row>
         </div>
       </section>
+        {/* <VideoSection /> */}
+    </>
     );
   }
 }

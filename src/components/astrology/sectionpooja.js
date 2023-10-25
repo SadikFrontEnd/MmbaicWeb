@@ -5,6 +5,7 @@ import textbottom from "../../assets/img/textbottom.png";
 import axiosConfig from "../../axiosConfig";
 import Homebookpooja from "./Homebookpooja.js";
 import "../../assets/scss/main.css";
+import VideoSection from "./VideoSection";
 // import Swiper from "react-id-swiper";
 class SectionPooja extends React.Component {
   state = {
@@ -27,6 +28,7 @@ class SectionPooja extends React.Component {
           </div>
           <Homebookpooja />
         </Container>
+        <VideoSection />
        </>
     );
   }

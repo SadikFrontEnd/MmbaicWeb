@@ -6,11 +6,9 @@ import textbottom from "../../assets/img/textbottom.png";
 import computer from "../../assets/img/computer.png";
 import "../../assets/scss/workflow.css";
 import "../../assets/scss/main.css";
-// import { FaBeer } from 'react-icons/fa';
-// import { GrPersonalComputer } from 'react-icons/Gr';
 import { GrPersonalComputer } from 'react-icons/gr';
 import SectionPooja from '../astrology/sectionpooja';
-// 
+import Testimonials from "./Testimonials";
 export default function Services() {
   return (
     <LayoutOne headerTop="visible">
@@ -115,6 +113,19 @@ export default function Services() {
             </Row>
             </Container>
 </div>
+      </section>
+      <section className="mb-4 mt-3">
+        <Row>
+          <Col>
+            <div className="d-flex justify-content-center mt-4 mb-2">
+              <h5>TESTIMONIALS</h5>
+            </div>
+            <div className="d-flex justify-content-center mb-2">
+              <h2>What they say</h2>
+            </div>
+            <Testimonials />
+          </Col>
+        </Row>
       </section>
     </LayoutOne>
   );

@@ -179,6 +179,7 @@ class BookEvent extends React.Component {
                                             class="fa fa-inr"
                                             aria-hidden="true"
                                           ></i>
+                                          
                                           <span className="pl-1">
                                             {value?.pooja_price}
                                           </span>

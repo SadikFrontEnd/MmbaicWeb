@@ -85,7 +85,7 @@ const SliderList = ({
         <div className="row">
           <div className="col-lg-12  ml-auto mr-auto">
             <div className="heading">
-              <h2>Best Astrologers</h2>
+              <h2>Best Astrologers145</h2>
               <img src={textbottom} alt="" />
             </div>
             <div className=" nav-style-1 nav-testi-style">

@@ -41,11 +41,11 @@ const HomeFurnitureTwo = () => {
 
       {/* <FirstSectiontree /> */}
       {/* <TeamMemberOne spaceTopClass="pt-95" spaceBottomClass="pb-70" /> */}
-      <SliderList />
+      {/* <SliderList /> */}
 
       <SectionPooja />
       {/* third section */}
-      <HomeVideoList />
+      {/* <HomeVideoList /> */}
 
       {/* <SliderYouTubeList /> */}
       {/* Product slider */}
@@ -56,7 +56,7 @@ const HomeFurnitureTwo = () => {
       {/* <NewsletterTwo spaceBottomClass="pb-100" /> */}
 
       {/* fun fact */}
-      <FunFactOne spaceTopClass="pt-30" spaceBottomClass="pb-30" />
+      {/* <FunFactOne spaceTopClass="pt-30" spaceBottomClass="pb-30" /> */}
 
       {/* testimonial */}
       {/* <TestimonialOne
@@ -67,7 +67,7 @@ const HomeFurnitureTwo = () => {
 
       {/* blog featured */}
 
-      <BlogFeatured spaceBottomClass="pb-55" />
+      {/* <BlogFeatured spaceBottomClass="pb-55" /> */}
     </LayoutOne>
   );
 };

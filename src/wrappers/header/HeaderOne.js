@@ -68,7 +68,7 @@ const HeaderOne = ({
             <div className="col-xl-8 col-lg-8 d-none d-lg-block">
               <NavMenu />
             </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 col-8">
+            <div className="col-xl-2 col-lg-8 col-md-10 col-8">
               <IconGroup />
             </div>
           </div>

@@ -65,10 +65,9 @@ const HeroSliderTwentyNine = () => {
                   Be a member of Milionnaire mind set club.
                 </h2>
                 <p className="text-color">
-                  START YUOR OWN BUSINESS OR OWN THE EXISTING BUSINESS{" "}
+                  START YUOR OWN BUSINESS OR OWN THE EXISTING BUSINESS
                 </p>
                 <div className="my-2">
-                  {" "}
                   <a
                     className="elementor-button elementor-button-link elementor-size-md"
                     href="#"
